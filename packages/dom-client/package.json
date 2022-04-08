@@ -1,0 +1,25 @@
+{
+  "name": "@remote-ui/dom-client",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public",
+    "@remote-ui:registry": "https://registry.npmjs.org"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.mjs",
+  "esnext": "index.esnext",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "esnext": "./index.esnext",
+      "import": "./index.mjs",
+      "require": "./index.js"
+    },
+    "./": "./"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@remote-ui/core": "^2.0.0"
+  }
+}
